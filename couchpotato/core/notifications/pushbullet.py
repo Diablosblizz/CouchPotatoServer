@@ -34,7 +34,7 @@ class Pushbullet(Notification):
                 cache = False,
                 device_iden = device,
                 type = 'note',
-                title = self.default_title,
+                title = "CP: " + toUnicode(message),
                 body = toUnicode(message)
             )
 
